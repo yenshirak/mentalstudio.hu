@@ -841,6 +841,24 @@ h3 {
   color: var(--ink);
 }
 
+.post-article h2 {
+  margin-top: 2.2em;
+  color: var(--deep-green);
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.15;
+}
+
+.post-figure {
+  margin: 2em 0;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .post-article .lead {
   color: var(--muted);
 }
