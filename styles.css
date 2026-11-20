@@ -71,6 +71,7 @@ a {
 }
 
 .main-nav {
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 10px 22px;
@@ -81,6 +82,30 @@ a {
 .main-nav a {
   text-decoration: none;
   opacity: 0.92;
+}
+
+.header-social {
+  display: flex;
+  gap: 8px;
+}
+
+.header-social a {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  opacity: 0.92;
+}
+
+.header-social a:hover,
+.header-social a:focus-visible {
+  opacity: 1;
+  color: #bcebd5;
+}
+
+.header-social svg {
+  width: 20px;
+  height: 20px;
 }
 
 .hero {
@@ -819,6 +844,18 @@ h3 {
   text-decoration: none;
 }
 
+.contact-box .social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link svg {
+  flex: none;
+  width: 1.2em;
+  height: 1.2em;
+}
+
 .post-page {
   min-height: 100vh;
   padding: clamp(32px, 6vw, 72px);
@@ -908,6 +945,12 @@ h3 {
   .main-nav {
     justify-content: flex-end;
     max-width: 230px;
+  }
+
+  .header-social {
+    position: absolute;
+    top: 104px;
+    left: clamp(18px, 4vw, 56px);
   }
 
   .hero {
